@@ -18,40 +18,40 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="170sp"
-            android:orientation="vertical"
-            android:layout_marginHorizontal="20sp"
-            android:layout_marginTop="20sp"
-            android:background="@drawable/background2sq">
-
-            <TextView
-                android:id="@+id/textView"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingTop="20sp"
-                android:text="GameSpace"
-                android:textAlignment="center"
-                android:textColor="#0a1931"
-                android:textSize="40sp"
-                android:layout_marginBottom="20sp"
-                android:textStyle="bold" />
+                android:layout_height="170sp"
+                android:layout_marginHorizontal="20sp"
+                android:layout_marginTop="20sp"
+                android:background="@drawable/background2sq"
+                android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="#0a1931"
-                android:layout_gravity="center"
-                android:padding="20sp"
-                android:text="Buy-Play-Sell-Earn"
-                android:textAlignment="center"
-                android:textColor="#ffc947"
-                android:textSize="15sp"
-                android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20sp"
+                    android:paddingTop="20sp"
+                    android:text="GameSpace"
+                    android:textAlignment="center"
+                    android:textColor="#0a1931"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
 
-        </LinearLayout>
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="#0a1931"
+                    android:padding="20sp"
+                    android:text="Buy-Play-Sell-Earn"
+                    android:textAlignment="center"
+                    android:textColor="#ffc947"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
 
             <TextView
                 android:id="@+id/loginStatus"

@@ -13,7 +13,7 @@
         <entry key="app/src/main/res/drawable/selector2.xml" value="0.3921875" />
         <entry key="app/src/main/res/layout/activity_buy.xml" value="0.15353260869565216" />
         <entry key="app/src/main/res/layout/activity_home.xml" value="0.22" />
-        <entry key="app/src/main/res/layout/activity_login.xml" value="0.23278985507246377" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_payment.xml" value="0.1157548125633232" />
         <entry key="app/src/main/res/layout/activity_profile.xml" value="0.2558876811594203" />
         <entry key="app/src/main/res/layout/activity_quiz.xml" value="0.13451086956521738" />
@@ -24,6 +24,7 @@
         <entry key="app/src/main/res/layout/activity_vip.xml" value="0.5" />
         <entry key="app/src/main/res/layout/fragment_coupons.xml" value="0.2558876811594203" />
         <entry key="app/src/main/res/layout/fragment_second.xml" value="0.2558876811594203" />
+        <entry key="app/src/main/res/layout/listview_layout.xml" value="0.37604166666666666" />
       </map>
     </option>
   </component>

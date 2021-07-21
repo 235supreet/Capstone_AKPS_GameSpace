@@ -14,8 +14,8 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class HomeActivity extends AppCompatActivity {
     ListView listView;
-    String[] games = {"Destiny 2", "Little Nightmare", "Human Fall Flat", "Hello"};
-    Integer[] image = {R.drawable.destiny, R.drawable.gameee, R.drawable.gameee, R.drawable.gameee};
+    String[] games = {"Destiny 2", "Little Nightmares", "Human: Fall Flat", "Resident Evil: Village"};
+    Integer[] image = {R.drawable.destiny, R.drawable.nightmares, R.drawable.fall, R.drawable.village};
     Integer[] rating = {3, 2, 1, 5};
     String[] price={"$85","$30","$50","$40"};
     @Override
