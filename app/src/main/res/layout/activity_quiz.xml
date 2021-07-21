@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background2"
+    android:orientation="vertical"
+    android:layout_centerHorizontal="true"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0a1931"
+        android:orientation="vertical"
+        android:paddingVertical="30sp"
+        android:layout_marginHorizontal="25sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="170sp"
+            android:background="@drawable/background2sq"
+            android:orientation="vertical"
+            android:layout_marginTop="50sp"
+            android:layout_marginHorizontal="20sp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quiz"
+                android:textAlignment="center"
+                android:textColor="#ffc947"
+                android:textSize="30sp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:paddingHorizontal="40sp"
+                android:paddingVertical="10sp"
+                android:background="#0a1931"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Give correct answers and \nwin various prizes"
+                android:textAlignment="center"
+                android:textColor="#0a1931"
+                android:textSize="15sp"
+                android:padding="50px"
+                android:layout_gravity="center"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/quizStart"
+            android:layout_width="110sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30sp"
+            android:backgroundTint="#185adb"
+            android:text="Start"
+            android:textColor="#efefef"
+            app:cornerRadius="0sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/quizQuit"
+            android:layout_width="110sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#185adb"
+            android:text="Quit"
+            android:textColor="#efefef"
+            app:cornerRadius="0sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

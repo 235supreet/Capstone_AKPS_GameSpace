@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Perfect Plate</string>
+    <string name="register"> <u><b>Create Account</b></u></string>
+    <string name="phone">Phone Number: 98XXXXXXXX</string>
+    <string name="email">Email: xyz@example.com</string>
+    <string name="adds">Address: XYZ</string>
+    <string name="contactUs">Contact Us:</string>
+    <string name="map">Map</string>
+    <string name="name_or_phone_number">Name or Phone number</string>
+    <string name="search_book_enjoy_repeat">Search-Book-Enjoy-Repeat</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="rewards">Rewards:</string>
+    <string name="_1_202_555_0157">+1-202-555-0157</string>
+    <string name="congratulations">Congratulations</string>
+    <string name="overview">Overview:</string>
+    <string name="xyz">XYZ</string>
+    <string name="address">Address</string>
+    <string name="book_a_table">Book a Table</string>
+    <string name="coins">Coins:</string>
+    <string name="_35">35$</string>
+    <string name="name">Name</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

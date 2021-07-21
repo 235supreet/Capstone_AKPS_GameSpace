@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "AKPS_Capstone_Project"

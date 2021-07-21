@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/background2"
+    android:gravity="center">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="17sp"
+        android:background="#0a1931">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="170sp"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="20sp"
+            android:layout_marginTop="20sp"
+            android:background="@drawable/background2sq">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20sp"
+                android:text="GameSpace"
+                android:textAlignment="center"
+                android:textColor="#0a1931"
+                android:textSize="40sp"
+                android:layout_marginBottom="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#0a1931"
+                android:layout_gravity="center"
+                android:padding="20sp"
+                android:text="Buy-Play-Sell-Earn"
+                android:textAlignment="center"
+                android:textColor="#ffc947"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+            <TextView
+                android:id="@+id/loginStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#ff0000"
+                android:textSize="30px"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/emailLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="70dp"
+                android:layout_marginTop="20dp"
+                android:background="#efefef"
+                android:hint="Email"
+                android:inputType="textPersonName"
+                android:padding="7dp"
+                android:textColor="#0a1931"
+                android:textColorHint="#0a1931" />
+
+            <EditText
+                android:id="@+id/passwordd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="70sp"
+                android:layout_marginTop="15sp"
+                android:background="#efefef"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:padding="7dp"
+                android:textColor="#0a1931"
+                android:textColorHint="#0a1931" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/login"
+                android:layout_width="110sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30sp"
+                android:backgroundTint="#185adb"
+                android:text="@string/login"
+                android:textColor="#efefef"
+                app:cornerRadius="0px" />
+
+            <TextView
+                android:id="@+id/register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:layout_marginBottom="30sp"
+                android:text="Create an account"
+                android:textAlignment="center"
+                android:textColor="#ffc947"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.AKPS_Capstone_Project" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#0a1931</item>
+        <item name="colorPrimaryVariant">#0a1931</item>
+        <item name="colorOnPrimary">#efefef</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#0a1931</item>
+        <item name="colorSecondaryVariant">#efefef</item>
+        <item name="colorOnSecondary">#373737</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

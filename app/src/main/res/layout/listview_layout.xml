@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/round_border"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+
+    >
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:id="@+id/imageV"/>
+    <TextView
+        android:id="@+id/game_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/imageV"
+        android:text="XYZ"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:paddingTop="5dp"
+        android:layout_marginStart="13dp"
+        android:textColor="@color/purple_500"/>
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/imageV"
+        android:layout_below="@+id/game_name"
+        android:text=""
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:layout_marginStart="13dp"
+        android:textColor="@color/purple_500"/>
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_toEndOf="@+id/imageV"
+        android:id="@+id/star1"
+        android:src="@drawable/star"
+        android:paddingTop="5dp"
+        android:layout_below="@+id/price"
+
+        android:layout_marginStart="10sp"
+        android:visibility="gone"/>
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_toEndOf="@+id/star1"
+        android:id="@+id/star2"
+        android:layout_below="@+id/price"
+
+        android:src="@drawable/star"
+        android:paddingStart="5dp"
+        android:paddingTop="5dp"
+        android:visibility="gone"/>
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_weight="0.11"
+        android:layout_toEndOf="@+id/star2"
+        android:layout_toRightOf="@+id/star2"
+        android:id="@+id/star3"
+        android:layout_below="@+id/price"
+
+        android:src="@drawable/star"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:visibility="gone"/>
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_weight="0.11"
+        android:layout_toEndOf="@+id/star3"
+        android:layout_toRightOf="@+id/star3"
+        android:id="@+id/star4"
+        android:layout_below="@+id/price"
+
+        android:src="@drawable/star"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:visibility="gone"/>
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_weight="0.11"
+        android:layout_toEndOf="@+id/star4"
+        android:layout_toRightOf="@+id/star4"
+        android:id="@+id/star5"
+        android:src="@drawable/star"
+        android:layout_below="@+id/price"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/btn_buy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/green_bg"
+        android:layout_toEndOf="@+id/imageV"
+        android:layout_marginTop="5dp"
+        android:text="Buy"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        ></TextView>
+</RelativeLayout>
+
+</LinearLayout>

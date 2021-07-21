@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BuyGameActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/ll"
+        android:background="@color/dark_blue">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Buy"
+            android:textAlignment="center"
+            android:textColor="#ffc947"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:id="@+id/titlee"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="15dp"
+        android:layout_below="@+id/ll">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_weight="0.11"
+            android:id="@+id/imageV"
+            android:src="@drawable/gameee"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:id="@+id/rlt"
+            >
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/star1"
+                android:src="@drawable/star"
+                android:paddingStart="5dp"
+                android:paddingTop="5dp"
+                android:visibility="gone"/>
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toEndOf="@+id/star1"
+                android:id="@+id/star2"
+                android:src="@drawable/star"
+                android:paddingStart="5dp"
+                android:paddingTop="5dp"
+                android:visibility="gone"/>
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toEndOf="@+id/star2"
+                android:id="@+id/star3"
+                android:src="@drawable/star"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:visibility="gone"/>
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toEndOf="@+id/star3"
+                android:id="@+id/star4"
+                android:src="@drawable/star"
+                android:paddingStart="5dp"
+                android:paddingTop="5dp"
+                android:visibility="gone"/>
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toEndOf="@+id/star4"
+                android:id="@+id/star5"
+                android:src="@drawable/star"
+                android:paddingStart="5dp"
+                android:paddingTop="5dp"
+                android:visibility="gone">
+            </ImageView>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/light_bg_round"
+            android:padding="15dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/overview"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/xyz"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/purple_700"/>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:id="@+id/buy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="Buy"/>
+
+
+</RelativeLayout>

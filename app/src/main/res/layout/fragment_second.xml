@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".CouponsFragment">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25sp"
+            android:text="Here you can find the offers available to the VIP members. Check and explore variety of games on discounts"
+            android:textAlignment="center"
+            android:textColor="#0a1931"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".CouponsFragment"
+            android:layout_marginHorizontal="15sp"
+            android:padding="15sp"
+            android:background="#185adb"
+            android:layout_marginBottom="65sp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl"
+                android:layout_marginBottom="80dp"
+                android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/coupon2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#0a1931"
+                        android:clickable="true"
+                        android:orientation="horizontal"
+                        android:padding="15dp">
+
+                        <ImageView
+                            android:layout_width="180dp"
+                            android:layout_height="140dp"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:src="@drawable/village"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/rl"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:paddingHorizontal="5dp"
+                                android:paddingBottom="5sp"
+                                android:text="Resident Evil: Village"
+                                android:textColor="#ffc947"
+                                android:textSize="17sp"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:text="Release year: 2021\nPlatform available: PS4, PC.\nResident Evil Village is a first-person survival horror game developed and published by Capcom. The sequel to Resident Evil 7: Biohazard (2017), players control Ethan Winters, who is searching for his kidnapped ..."
+                                android:textColor="#efefef"
+                                android:textSize="12sp"
+                                android:textStyle="bold"/>
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/checkOffer1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:minHeight="0sp"
+                                android:minWidth="0sp"
+                                android:layout_gravity="start"
+                                android:backgroundTint="#ffc947"
+                                android:text="Check offer"
+                                android:textColor="#0a1931"
+                                android:textSize="7sp"
+                                app:cornerRadius="0sp" />
+
+                        </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/coupon3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="#0a1931"
+                    android:clickable="true"
+                    android:orientation="horizontal"
+                    android:padding="15dp">
+
+                    <ImageView
+                        android:layout_width="180dp"
+                        android:layout_height="140dp"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:src="@drawable/destiny"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:paddingHorizontal="5dp"
+                            android:paddingBottom="5sp"
+                            android:text="Destiny 2 : Beyond light"
+                            android:textColor="#ffc947"
+                            android:textSize="17sp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="Release year: 2020\nPlatform available: PC\nDestiny 2: Beyond Light is a major expansion for Destiny 2, a first-person shooter video game developed by Bungie. It was released on ..."
+                            android:textColor="#efefef"
+                            android:textSize="12sp"
+                            android:textStyle="bold"/>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/checkOffer2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minHeight="0sp"
+                            android:minWidth="0sp"
+                            android:layout_gravity="start"
+                            android:backgroundTint="#ffc947"
+                            android:text="Check offer"
+                            android:textColor="#0a1931"
+                            android:textSize="7sp"
+                            app:cornerRadius="0sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+</LinearLayout>
