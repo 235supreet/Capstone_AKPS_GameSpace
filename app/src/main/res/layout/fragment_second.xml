@@ -24,7 +24,7 @@
             tools:context=".CouponsFragment"
             android:layout_marginHorizontal="15sp"
             android:padding="15sp"
-            android:background="#185adb"
+            android:background="@drawable/blue_gradient"
             android:layout_marginBottom="65sp">
 
             <LinearLayout

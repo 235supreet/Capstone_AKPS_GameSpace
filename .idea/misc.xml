@@ -5,10 +5,13 @@
       <map>
         <entry key="app/src/main/res/drawable/green_bggg.xml" value="0.2609375" />
         <entry key="app/src/main/res/layout/activity_buy.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/activity_buy_game.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_buy_game.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_contact_us.xml" value="0.12395833333333334" />
         <entry key="app/src/main/res/layout/activity_home.xml" value="0.1671195652173913" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.1671195652173913" />
         <entry key="app/src/main/res/layout/activity_payment.xml" value="0.12395833333333334" />
+        <entry key="app/src/main/res/layout/activity_profile.xml" value="0.12395833333333334" />
+        <entry key="app/src/main/res/layout/fragment_second.xml" value="0.12395833333333334" />
       </map>
     </option>
   </component>
