@@ -26,12 +26,12 @@ public class HomeActivity extends AppCompatActivity {
         listView=findViewById(R.id.listView);
         CustomListView customListView=new CustomListView(this, games,price,image,rating);
         listView.setAdapter(customListView);
-
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent intent=new Intent(HomeActivity.this,BuyGameActivity.class);
+                Intent intent = new Intent(HomeActivity.this,BuyGameActivity.class);
                 intent.putExtra("game_name", games[position]);
+                intent.putExtra("image", image[position]);
                 intent.putExtra("rating",rating[position]);
                 intent.putExtra("price",price[position]);
                 startActivity(intent);
@@ -39,9 +39,6 @@ public class HomeActivity extends AppCompatActivity {
         });
 
     }
-
-
-
 
     private void bottomNavigation() {
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
