@@ -35,9 +35,16 @@ public class BuyGameActivity extends AppCompatActivity {
         Bundle bundle=getIntent().getExtras();
         game_name=bundle.getString("game_name");
         rating=bundle.getInt("rating");
-        imageNumber=bundle.getInt("image");
         title.setText(game_name);
-
+        if (game_name.equals("Destiny 2")) {
+            imageView.setImageResource(R.drawable.destiny);
+        }else if (game_name.equals("Little Nightmares")) {
+            imageView.setImageResource(R.drawable.nightmares);
+        }else if (game_name.equals("Human: Fall Flat")) {
+            imageView.setImageResource(R.drawable.fall);
+        }else if (game_name.equals("Resident Evil: Village")){
+            imageView.setImageResource(R.drawable.village);
+        }
         if (rating==1){
             star1.setVisibility(View.VISIBLE);
         }
@@ -66,10 +73,7 @@ public class BuyGameActivity extends AppCompatActivity {
             star5.setVisibility(View.VISIBLE);
         }
 
-        if (imageNumber==1) {
-            ImageView View = (ImageView) findViewById(R.id.imageVieww);
-            imageView.setImageResource(imageNumber);
-        }
+
 
         buy.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -31,7 +31,6 @@ public class HomeActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = new Intent(HomeActivity.this,BuyGameActivity.class);
                 intent.putExtra("game_name", games[position]);
-                intent.putExtra("image", image[position]);
                 intent.putExtra("rating",rating[position]);
                 intent.putExtra("price",price[position]);
                 startActivity(intent);

@@ -30,17 +30,7 @@
                 android:textSize="35sp"
                 android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/blueLine"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text=""
-                android:textAlignment="center"
-                android:background="#185adb"
-                android:layout_marginHorizontal="25sp"
-                android:height="7sp"
-                android:textSize="30px"
-                android:textStyle="bold" />
+
 
             <TextView
                 android:id="@+id/signUpStatus"
@@ -50,7 +40,7 @@
                 android:text=""
                 android:textAlignment="center"
                 android:textColor="#ff0000"
-                android:textSize="30px"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <EditText
@@ -73,8 +63,7 @@
                 android:layout_marginHorizontal="70sp"
                 android:layout_marginTop="15sp"
                 android:hint="Phone"
-                android:inputType="textPassword"
-                android:padding="7dp"
+                 android:padding="7dp"
                 android:background="#efefef"
                 android:textColorHint="#0a1931"
                 android:textColor="#0a1931"/>
@@ -86,8 +75,7 @@
                 android:layout_marginHorizontal="70sp"
                 android:layout_marginTop="15sp"
                 android:hint="Email"
-                android:inputType="textPassword"
-                android:padding="7dp"
+                 android:padding="7dp"
                 android:background="#efefef"
                 android:textColorHint="#0a1931"
                 android:textColor="#0a1931"/>
