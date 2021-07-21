@@ -34,7 +34,8 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_margin="15dp"
-        android:layout_below="@+id/ll">
+        android:layout_below="@+id/ll"
+        android:background="@drawable/blue_gradient">
 
         <ImageView
             android:layout_width="match_parent"

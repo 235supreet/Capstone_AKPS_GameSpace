@@ -36,15 +36,19 @@ public class BuyGameActivity extends AppCompatActivity {
         game_name=bundle.getString("game_name");
         rating=bundle.getInt("rating");
         title.setText(game_name);
-        if (game_name.equals("Destiny 2")) {
+        if (game_name.equals("Destiny 2: Beyond Light")) {
             imageView.setImageResource(R.drawable.destiny);
-        }else if (game_name.equals("Little Nightmares")) {
+        }
+        else if (game_name.equals("Little Nightmares")) {
             imageView.setImageResource(R.drawable.nightmares);
-        }else if (game_name.equals("Human: Fall Flat")) {
+        }
+        else if (game_name.equals("Human: Fall Flat")) {
             imageView.setImageResource(R.drawable.fall);
-        }else if (game_name.equals("Resident Evil: Village")){
+        }
+        else if (game_name.equals("Resident Evil: Village")){
             imageView.setImageResource(R.drawable.village);
         }
+
         if (rating==1){
             star1.setVisibility(View.VISIBLE);
         }
