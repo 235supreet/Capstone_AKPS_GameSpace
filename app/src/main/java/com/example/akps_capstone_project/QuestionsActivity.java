@@ -18,19 +18,19 @@ public class QuestionsActivity extends AppCompatActivity {
     RadioButton rb1,rb2,rb3,rb4;
 
     String questions[] = {
-            "Which type of beans are used to make baked beans?",
-            "What does IPA stand for?",
-            "Which of these chocolate bars does not contain nuts in its ingredient list?",
-            "Gruyère is a cheese from which country?",
-            "What is a hop?",
+            "What is the best selling videogame of all time?",
+            "What is the highest-selling gaming console to date?",
+            "What year was the first virtual reality headset created?",
+            "What movie franchise influenced the creation of the game “Doom?”",
+            "What food was the character Pac Man modeled after?",
     };
-    String answers[] = {"Haricot beans","India pale ale","Double Decker","Switzerland","A climbing plant, the flowers of which are used in beer"};
+    String answers[] = {"Minecraft","Playstation 2","1995","Aliens","Pizza"};
     String opt[] = {
-            "Borlotti beans","Haricot beans","Cannellini beans","Flageolet beans",
-            "Intensely potent ale","International porter association","India premium ale","India pale ale",
-            "Double Decker","Snickers","Picnic","Toblerone",
-            "France","Switzerland","Austria","Germany",
-            "A climbing plant, the flowers of which are used in beer","A climbing plant, the roots of which are used in beer","A climbing plant, the leaves of which are used in beer","A grain crop used in beer"
+            "Minecraft","Mario Bros","GTA: San Andreas","The Legend of Zelda",
+            "SNES","Xbox","Playstation 2","Nintendo Wii",
+            "2000","1990","2001","1995",
+            "Aliens","Mortal Kombat","Predator","Dune",
+            "Bagel","Pizza","Taco","Burger"
     };
     int flag=0;
     public static int marks=0,correct=0,wrong=0;
