@@ -5,12 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ContactUsActivity"
-    android:background="@drawable/blue_gradient">
+    android:background="@drawable/backgroundgradient">
 
     <ScrollView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:background="@drawable/background2"
+        android:background="@drawable/background"
         android:layout_marginStart="10pt"
         android:layout_marginTop="20pt"
         android:layout_marginEnd="10pt"
@@ -52,6 +52,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="xxx@xxxxx.com"
+                        android:id="@+id/email"
                         android:textColor="#878787"
                         android:textSize="18sp" />
 
@@ -60,6 +61,7 @@
                         android:layout_height="1dp"
                         android:layout_marginTop="15dp"
                         android:background="#0a1931" />
+
                 </LinearLayout>
 
                 <LinearLayout
@@ -76,6 +78,7 @@
                         android:textSize="13sp" />
 
                     <TextView
+                        android:id="@+id/phone"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="xxx-xxx-xxxx"
@@ -87,6 +90,7 @@
                         android:layout_height="1dp"
                         android:layout_marginTop="15dp"
                         android:background="#0a1931" />
+
                 </LinearLayout>
 
                 <LinearLayout
@@ -106,13 +110,14 @@
                         android:layout_width="80dp"
                         android:layout_height="50dp"
                         android:layout_marginTop="5dp"
-                        android:src="@drawable/reward1" />
+                        android:src="@drawable/reward" />
 
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
                         android:layout_marginTop="15dp"
                         android:background="#0a1931" />
+
                 </LinearLayout>
 
                 <LinearLayout
@@ -128,7 +133,8 @@
                         android:textColor="#0a1931"
                         android:textSize="13sp" />
 
-                    <EditText
+                    <TextView
+                        android:id="@+id/points"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="20sp"
@@ -196,7 +202,8 @@
                     android:background="@drawable/circle"
                     android:padding="3dp"
                     android:scaleType="centerInside"
-                    android:src="@drawable/pr" />
+                    android:src="@drawable/profileimage" />
+
             </RelativeLayout>
 
             <TextView
@@ -209,6 +216,7 @@
                 android:text="Profile Name"
                 android:textColor="#efefef"
                 android:textSize="20sp" />
+
         </RelativeLayout>
 
     </LinearLayout>
@@ -225,188 +233,3 @@
         app:menu="@menu/menu_navigation" />
 
 </RelativeLayout>
-
-    <!--<?xml version="1.0" encoding="utf-8"?>
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".ProfileActivity"
-        android:background="#efefef">
-
-        <RelativeLayout
-            android:id="@+id/rellay1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#0a1931"
-            android:paddingBottom="20dp">
-
-            <RelativeLayout
-                android:id="@+id/imgUser"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/circle_border">
-
-                <ImageView
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:layout_marginStart="9dp"
-                    android:layout_marginTop="9dp"
-                    android:layout_marginEnd="9dp"
-                    android:layout_marginBottom="9dp"
-                    android:adjustViewBounds="true"
-                    android:background="@drawable/circle"
-                    android:padding="3dp"
-                    android:scaleType="centerInside"
-                    android:src="@drawable/pr" />
-            </RelativeLayout>
-
-            <TextView
-                android:id="@+id/tv_name"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/imgUser"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="15sp"
-                android:text="Profile Name"
-                android:textColor="#efefef"
-                android:textSize="20sp" />
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/rellay1"
-            android:layout_marginTop="50dp">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
-                android:layout_marginTop="20dp"
-                android:orientation="vertical">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Email"
-                        android:textColor="#0a1931"
-                        android:textSize="13sp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="joey@sharenofood.com"
-                        android:textColor="#878787"
-                        android:textSize="18sp"/>
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:layout_marginTop="15dp"
-                        android:background="@color/black"/>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Phone"
-                        android:textColor="#0a1931"
-                        android:textSize="13sp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/_1_202_555_0157"
-                        android:textColor="#878787"
-                        android:textSize="18sp"/>
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:layout_marginTop="15dp"
-                        android:background="@color/black" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
-                    android:orientation="vertical">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/rewards"
-                        android:textColor="#0a1931"
-                        android:textSize="13sp" />
-                    <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="50dp"
-                        android:layout_marginTop="5dp"
-                        android:src="@drawable/reward1"/>
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:layout_marginTop="15dp"
-                        android:background="@color/black"/>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
-                    android:orientation="horizontal">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Points"
-                        android:textColor="#0a1931"
-                        android:textSize="13sp"/>
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/_35"
-                        android:layout_marginStart="20sp"
-                        android:focusable="false"
-                        android:textSize="15sp"
-                        android:padding="20dp"
-                        android:textColor="#efefef"
-                        android:background="@drawable/circle">
-                    </EditText>
-
-                </LinearLayout>
-
-                <Button
-                    android:id="@+id/logOut"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="100sp"
-                    android:layout_marginTop="20sp"
-                    android:background="#0a1931"
-                    android:text="Logout"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
-
-        </RelativeLayout>
-
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/bottom_navigation"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:background="#0a1931"
-            app:itemIconTint="@drawable/selector"
-            app:itemTextColor="#efefef"
-            app:menu="@menu/menu_navigation" />
-
-    </RelativeLayout>-->

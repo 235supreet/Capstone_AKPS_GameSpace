@@ -5,18 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".BuyGameActivity"
-    android:background="@drawable/background2"
+    android:background="@drawable/background"
     android:orientation="vertical">
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@drawable/blue_gradient">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:background="@drawable/blue_gradient">
+            android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -53,7 +53,7 @@
                     android:layout_height="150dp"
                     android:layout_weight="0.11"
                     android:id="@+id/imageVieww"
-                    android:src="@drawable/gameee"/>
+                    android:src="@drawable/game"/>
 
                 <RelativeLayout
                     android:layout_width="match_parent"

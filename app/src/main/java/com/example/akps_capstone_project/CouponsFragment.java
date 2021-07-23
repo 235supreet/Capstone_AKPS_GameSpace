@@ -1,10 +1,9 @@
 package com.example.akps_capstone_project;
 
-import android.app.Activity;
 import android.content.Intent;
+import android.database.Cursor;
 import android.os.Bundle;
 
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,7 +11,8 @@ import android.view.ViewGroup;
 
 public class CouponsFragment extends Fragment {
 
-    View view;
+    DBHelper dbhelper;
+    View view, coupon1, coupon2;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -25,7 +25,33 @@ public class CouponsFragment extends Fragment {
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        view.findViewById(R.id.coupon1).setOnClickListener(new View.OnClickListener() {
+        coupon1 = view.findViewById(R.id.coupon1);
+        coupon2 = view.findViewById(R.id.coupon2);
+
+        dbhelper = new DBHelper(getActivity());
+        int sc = 0;
+        Cursor cursor = dbhelper.getAll();
+        while (cursor.moveToNext()) {
+            sc = cursor.getInt(4);
+        }
+
+        coupon1.setEnabled(false);
+        coupon2.setEnabled(false);
+
+        if (sc >= 5) {
+            coupon1.setBackgroundResource(R.color.darkest_blue);
+            coupon1.setEnabled(true);
+            coupon1.isFocusable();
+            coupon1.isClickable();
+        }
+        else if(sc >= 10) {
+            coupon2.setBackgroundResource(R.color.darkest_blue);
+            coupon2.setEnabled(true);
+            coupon2.isFocusable();
+            coupon2.isClickable();
+        }
+
+        coupon1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(), HomeActivity.class);
@@ -33,7 +59,7 @@ public class CouponsFragment extends Fragment {
             }
         });
 
-        view.findViewById(R.id.coupon2).setOnClickListener(new View.OnClickListener() {
+        coupon2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(), HomeActivity.class);
@@ -42,5 +68,14 @@ public class CouponsFragment extends Fragment {
         });
     }
 
+    public void showData() {
+        Cursor result = dbhelper.getAll();
+        while (result.moveToNext()) {
+            String n = result.getString(1);
+            String m = result.getString(2);
+            String p = result.getString(3);
+            String s = result.getString(5);
 
+        }
+    }
 }

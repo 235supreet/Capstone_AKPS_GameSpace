@@ -12,10 +12,11 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class QuestionsActivity extends AppCompatActivity {
+
     TextView tv;
     Button submitButton, quitButton;
-    RadioGroup radio_g;
-    RadioButton rb1,rb2,rb3,rb4;
+    RadioGroup radioGroup;
+    RadioButton radioButton1, radioButton2, radioButton3, radioButton4;
 
     String questions[] = {
             "What is the best selling videogame of all time?",
@@ -32,8 +33,9 @@ public class QuestionsActivity extends AppCompatActivity {
             "Aliens","Mortal Kombat","Predator","Dune",
             "Bagel","Pizza","Taco","Burger"
     };
-    int flag=0;
-    public static int marks=0,correct=0,wrong=0;
+    int flag = 0;
+    public static int marks = 0, correct = 0, wrong = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,41 +44,36 @@ public class QuestionsActivity extends AppCompatActivity {
         final TextView score = (TextView)findViewById(R.id.textView4);
         Intent intent = getIntent();
 
-        submitButton =(Button)findViewById(R.id.button3);
-        quitButton =(Button)findViewById(R.id.buttonquit);
-        tv=(TextView) findViewById(R.id.tvque);
+        submitButton = (Button)findViewById(R.id.button3);
+        quitButton = (Button)findViewById(R.id.buttonquit);
+        tv = (TextView) findViewById(R.id.tvque);
 
-        radio_g=(RadioGroup)findViewById(R.id.answersgrp);
-        rb1=(RadioButton)findViewById(R.id.radioButton);
-        rb2=(RadioButton)findViewById(R.id.radioButton2);
-        rb3=(RadioButton)findViewById(R.id.radioButton3);
-        rb4=(RadioButton)findViewById(R.id.radioButton4);
+        radioGroup = (RadioGroup)findViewById(R.id.answersgrp);
+        radioButton1 = (RadioButton)findViewById(R.id.radioButton);
+        radioButton2 = (RadioButton)findViewById(R.id.radioButton2);
+        radioButton3 = (RadioButton)findViewById(R.id.radioButton3);
+        radioButton4 = (RadioButton)findViewById(R.id.radioButton4);
         tv.setText(questions[flag]);
-        rb1.setText(opt[0]);
-        rb2.setText(opt[1]);
-        rb3.setText(opt[2]);
-        rb4.setText(opt[3]);
+        radioButton1.setText(opt[0]);
+        radioButton2.setText(opt[1]);
+        radioButton3.setText(opt[2]);
+        radioButton4.setText(opt[3]);
+
         submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //int color = mBackgroundColor.getColor();
-                //mLayout.setBackgroundColor(color);
 
-                if(radio_g.getCheckedRadioButtonId()==-1)
-                {
+                if (radioGroup.getCheckedRadioButtonId() == -1) {
                     Toast.makeText(getApplicationContext(), "Please select one choice", Toast.LENGTH_SHORT).show();
                     return;
                 }
-                RadioButton uans = (RadioButton) findViewById(radio_g.getCheckedRadioButtonId());
-                String ansText = uans.getText().toString();
-//                  Toast.makeText(getApplicationContext(), ansText, Toast.LENGTH_SHORT).show();
-                if(ansText.equals(answers[flag])) {
+                RadioButton ans = (RadioButton) findViewById(radioGroup.getCheckedRadioButtonId());
+                String ansText = ans.getText().toString();
+                if (ansText.equals(answers[flag])) {
                     correct++;
-                    //Toast.makeText(getApplicationContext(), "Correct", Toast.LENGTH_SHORT).show();
                 }
                 else {
                     wrong++;
-                    //Toast.makeText(getApplicationContext(), "Wrong", Toast.LENGTH_SHORT).show();
                 }
 
                 flag++;
@@ -84,21 +81,19 @@ public class QuestionsActivity extends AppCompatActivity {
                 if (score != null)
                     score.setText(""+correct);
 
-                if(flag<questions.length)
-                {
+                if (flag < questions.length) {
                     tv.setText(questions[flag]);
-                    rb1.setText(opt[flag*4]);
-                    rb2.setText(opt[flag*4 +1]);
-                    rb3.setText(opt[flag*4 +2]);
-                    rb4.setText(opt[flag*4 +3]);
+                    radioButton1.setText(opt[flag*4]);
+                    radioButton2.setText(opt[flag*4 +1]);
+                    radioButton3.setText(opt[flag*4 +2]);
+                    radioButton4.setText(opt[flag*4 +3]);
                 }
-                else
-                {
-                    marks=correct;
+                else {
+                    marks = correct;
                     Intent in = new Intent(getApplicationContext(), ResultActivity.class);
                     startActivity(in);
                 }
-                radio_g.clearCheck();
+                radioGroup.clearCheck();
             }
         });
 
@@ -110,5 +105,4 @@ public class QuestionsActivity extends AppCompatActivity {
             }
         });
     }
-
 }

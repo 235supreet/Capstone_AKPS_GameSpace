@@ -10,12 +10,11 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class SignupActivity extends AppCompatActivity {
 
-    TextView signupstatus, loginSignUp;
-    EditText name,email,phone,password,conpassword;
+    TextView signUpStatus, loginSignUp;
+    EditText name, email, phone, password, confirmPassword;
     Button signUp;
     DBHelper dbHelper;
 
@@ -23,12 +22,13 @@ public class SignupActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
-        name=findViewById(R.id.signUpName);
-        email=findViewById(R.id.signUpMail);
-        phone=findViewById(R.id.signUpPhone);
-        password=findViewById(R.id.password);
-        conpassword=findViewById(R.id.confirmPassword);
-        signupstatus=findViewById(R.id.signUpStatus);
+
+        name = findViewById(R.id.signUpName);
+        email = findViewById(R.id.signUpMail);
+        phone = findViewById(R.id.signUpPhone);
+        password = findViewById(R.id.password);
+        confirmPassword = findViewById(R.id.confirmPassword);
+        signUpStatus = findViewById(R.id.signUpStatus);
         signUp = findViewById(R.id.signUp);
         loginSignUp = findViewById(R.id.loginSignUp);
         dbHelper = new DBHelper(this);
@@ -36,25 +36,25 @@ public class SignupActivity extends AppCompatActivity {
         signUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (name.getText().toString().equals("") || email.getText().toString().equals("")  || phone.getText().toString().equals("")  || password.getText().toString().equals("")  || conpassword.getText().toString().equals("") ){
-                    signupstatus.setText("All fields are mandatory.");
-                    signupstatus.setTextColor(Color.parseColor("#ff0000"));
+                if (name.getText().toString().equals("") || email.getText().toString().equals("") || phone.getText().toString().equals("") || password.getText().toString().equals("") || confirmPassword.getText().toString().equals("")) {
+                    signUpStatus.setText("All fields are mandatory.");
+                    signUpStatus.setTextColor(Color.parseColor("#ff0000"));
                 }
                 else {
-                    Toast.makeText(SignupActivity.this, "Workkingg", Toast.LENGTH_SHORT).show();
-                    boolean res = dbHelper.insert(name.getText().toString(), email.getText().toString(),phone.getText().toString(),password.getText().toString());
+                    boolean res = dbHelper.insert(name.getText().toString(), email.getText().toString(), phone.getText().toString(), password.getText().toString());
                     if (res) {
-                        signupstatus.setTextColor(Color.parseColor("#ff0000"));
-                        signupstatus.setText("Account created successfully");
+                        signUpStatus.setTextColor(Color.parseColor("#00ff00"));
+                        signUpStatus.setText("Account created successfully");
                         name.setText("");
                         email.setText("");
                         phone.setText("");
                         password.setText("");
-                        conpassword.setText("");
+                        confirmPassword.setText("");
                         try {
                             InputMethodManager imm = (InputMethodManager)getSystemService(INPUT_METHOD_SERVICE);
                             imm.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
-                        } catch (Exception e) {
+                        }
+                        catch (Exception e) {
                             System.out.println("Task failed");
                         }
                     }

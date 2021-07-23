@@ -1,34 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SplashActivity"
-    android:background="@drawable/background2"
-    >
+    android:background="@drawable/backgroundgradient">
 
     <ImageView
+        android:id="@+id/logo"
         android:layout_width="300dp"
         android:layout_height="300dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="200dp"
-        android:src="@drawable/logo11"
-        >
-
-    </ImageView>
+        android:layout_centerInParent="true"
+        android:src="@drawable/appicon"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:layout_marginBottom="120dp"
-        android:textStyle="bold"
-        android:text="Buy-Play-Sell-Earn"
+        android:layout_alignBottom="@+id/logo"
+        android:layout_marginBottom="-50sp"
         android:gravity="center"
-        android:textColor="#0a1931"
-        android:textSize="25sp">
-    </TextView>
+        android:text="Buy-Play-Sell-Earn"
+        android:textColor="#efefef"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
 
-</FrameLayout>
+</RelativeLayout>

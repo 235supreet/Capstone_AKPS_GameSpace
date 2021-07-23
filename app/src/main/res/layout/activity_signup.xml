@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:background="@drawable/background2"
+    android:background="@drawable/backgroundgradient"
     android:gravity="center">
 
     <ScrollView
@@ -29,8 +29,6 @@
                 android:textColor="#ffc947"
                 android:textSize="35sp"
                 android:textStyle="bold" />
-
-
 
             <TextView
                 android:id="@+id/signUpStatus"
@@ -127,7 +125,7 @@
                 android:textAlignment="center"
                 android:textColor="#ffc947"
                 android:textSize="15sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"/>
         </LinearLayout>
 
     </ScrollView>

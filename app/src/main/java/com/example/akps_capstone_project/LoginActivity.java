@@ -2,6 +2,7 @@ package com.example.akps_capstone_project;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
@@ -12,11 +13,14 @@ import android.widget.TextView;
 
 public class LoginActivity extends AppCompatActivity {
 
-    Button login,signup;
-    TextView register,loginStatus;
-    EditText nameph,pass;
+    Button login, signup;
+    TextView register, loginStatus;
+    EditText nameLogin, passLogin;
     DBHelper dbHelper;
-    String name,passwordStr;
+    String name, passwordStr;
+    private SharedPreference sharedPreference;
+    Activity context = this;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,29 +29,32 @@ public class LoginActivity extends AppCompatActivity {
         login=findViewById(R.id.login);
         signup=findViewById(R.id.signUp);
         register=findViewById(R.id.register);
-        nameph=findViewById(R.id.emailLogin);
-        pass=findViewById(R.id.passwordd);
+        nameLogin =findViewById(R.id.emailLogin);
+        passLogin =findViewById(R.id.passwordd);
         loginStatus=findViewById(R.id.loginStatus);
         dbHelper = new DBHelper(this);
+        sharedPreference = new SharedPreference();
+        sharedPreference.clearSharedPreference(context);
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Cursor result = dbHelper.getAll();
                 String record ="";
-                if (!pass.getText().toString().equals("") || !nameph.getText().toString().equals("")) {
+
+                if (!passLogin.getText().toString().equals("") || !nameLogin.getText().toString().equals("")) {
                     while (result.moveToNext()) {
                         name = result.getString(0);
                         passwordStr = result.getString(3);
-                        record += "NAME: " + name + ", PASSWORD: " + pass + "\n";
+                        record += "NAME: " + name + ", PASSWORD: " + passLogin + "\n";
 
-                        if (pass.getText().toString().equals(passwordStr) && nameph.getText().toString().equals(name)) {
+                        if (passLogin.getText().toString().equals(passwordStr) && nameLogin.getText().toString().equals(name)) {
                             loginStatus.setText("");
+                            sharedPreference.save(context, nameLogin.getText().toString());
                             Intent i= new Intent(LoginActivity.this,HomeActivity.class);
                             startActivity(i);
                         }
-
-                        else if (!pass.getText().toString().equals(passwordStr) && !nameph.getText().toString().equals(name)){
+                        else if (!passLogin.getText().toString().equals(passwordStr) && !nameLogin.getText().toString().equals(name)){
                             loginStatus.setText("Invalid credentials");
                             loginStatus.postDelayed(new Runnable() {
                                 @Override
@@ -78,5 +85,10 @@ public class LoginActivity extends AppCompatActivity {
                 finish();
             }
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+
     }
 }

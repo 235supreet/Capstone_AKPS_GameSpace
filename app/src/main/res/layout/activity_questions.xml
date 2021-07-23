@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@drawable/background2"
+    android:background="@drawable/backgroundgradient"
     android:gravity="center">
 
     <LinearLayout
@@ -96,17 +96,6 @@
             android:textColor="#ffc947"
             app:cornerRadius="0sp" />
 
-        <!--        <TextView
-            android:id="@+id/tvque"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/answersgrp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:layout_marginBottom="52dp"
-            android:text="Questions"
-            android:textAppearance="?android:attr/textAppearanceLarge" />-->
-
         <LinearLayout
             android:id="@+id/menu"
             android:layout_width="match_parent"
@@ -141,37 +130,5 @@
         </LinearLayout>
 
     </LinearLayout>
-
-    <!--<TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginLeft="20sp"
-        android:layout_marginBottom="232dp"
-        android:paddingBottom="5sp"
-        android:text="Your Score"
-        android:textAppearance="@color/abc_background_cache_hint_selector_material_dark"
-        android:textColor="#0a1931"
-        android:textSize="20sp" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="24dp"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="40sp"
-        android:layout_marginTop="40sp"
-        android:layout_marginEnd="20sp"
-        android:layout_marginRight="19dp"
-        android:layout_marginBottom="232dp"
-        android:paddingBottom="5sp"
-        android:text="0"
-        android:textAlignment="center"
-        android:textAppearance="@color/abc_background_cache_hint_selector_material_dark"
-        android:textColor="#0a1931"
-        android:textSize="20sp" />-->
 
 </RelativeLayout>

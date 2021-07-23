@@ -13,18 +13,20 @@ import android.widget.ListView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class HomeActivity extends AppCompatActivity {
+
     ListView listView;
     String[] games = {"Destiny 2: Beyond Light", "Little Nightmares", "Human: Fall Flat", "Resident Evil: Village"};
     Integer[] image = {R.drawable.destiny, R.drawable.nightmares, R.drawable.fall, R.drawable.village};
     Integer[] rating = {3, 2, 1, 5};
-    String[] price={"$85","$30","$50","$40"};
+    String[] price = {"$85", "$30", "$50", "$40"};
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         bottomNavigation();
-        listView=findViewById(R.id.listView);
-        CustomListView customListView=new CustomListView(this, games,price,image,rating);
+        listView = findViewById(R.id.listView);
+        CustomListView customListView = new CustomListView(this, games,price,image,rating);
         listView.setAdapter(customListView);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -36,7 +38,6 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
     }
 
     private void bottomNavigation() {
@@ -46,15 +47,11 @@ public class HomeActivity extends AppCompatActivity {
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch (item.getItemId()){
+                switch (item.getItemId()) {
                     case R.id.home:
                         startActivity(new Intent(getApplicationContext(), HomeActivity.class));
                         overridePendingTransition(0,0);
                         return true;
-                    /*case R.id.buy:
-                        startActivity(new Intent(getApplicationContext(),BuyActivity.class));
-                        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
-                        return true;*/
                     case R.id.vip:
                         startActivity(new Intent(getApplicationContext(), VIPActivity.class));
                         overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
@@ -72,6 +69,4 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
     }
-
-
 }

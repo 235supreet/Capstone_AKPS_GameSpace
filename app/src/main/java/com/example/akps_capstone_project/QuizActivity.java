@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 
 public class QuizActivity extends AppCompatActivity {
 
@@ -21,7 +20,7 @@ public class QuizActivity extends AppCompatActivity {
         quizStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(), QuestionsActivity.class);
+                Intent intent = new Intent(getApplicationContext(), QuestionsActivity.class);
                 startActivity(intent);
             }
         });
@@ -29,7 +28,7 @@ public class QuizActivity extends AppCompatActivity {
         quizQuit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(), VIPActivity.class);
+                Intent intent = new Intent(getApplicationContext(), VIPActivity.class);
                 startActivity(intent);
             }
         });

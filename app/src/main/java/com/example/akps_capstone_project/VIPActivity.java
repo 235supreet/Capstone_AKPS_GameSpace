@@ -17,13 +17,14 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class VIPActivity extends AppCompatActivity {
 
-    ImageView imPlay;
+    ImageView imagePlay;
     Button coupons, secondButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vip);
+
         replaceFragment(new CouponsFragment());
         bottomNavigation();
 
@@ -33,23 +34,19 @@ public class VIPActivity extends AppCompatActivity {
         coupons.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 replaceFragment(new CouponsFragment());
-
             }
         });
 
         secondButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 replaceFragment(new SecondFragment());
-
             }
         });
 
-        imPlay=findViewById(R.id.play);
-        imPlay.setOnClickListener(new View.OnClickListener() {
+        imagePlay = findViewById(R.id.play);
+        imagePlay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i=new Intent(VIPActivity.this,QuizActivity.class);
@@ -59,7 +56,6 @@ public class VIPActivity extends AppCompatActivity {
     }
 
     private void replaceFragment(Fragment fragment) {
-
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.frameLayout,fragment);
@@ -78,10 +74,6 @@ public class VIPActivity extends AppCompatActivity {
                         startActivity(new Intent(getApplicationContext(), HomeActivity.class));
                         overridePendingTransition(R.anim.slide_in_left,R.anim.slide_out_right);
                         return true;
-                    /*case R.id.buy:
-                        startActivity(new Intent(getApplicationContext(),BuyActivity.class));
-                        overridePendingTransition(R.anim.slide_in_left,R.anim.slide_out_right);
-                        return true;*/
                     case R.id.vip:
                         startActivity(new Intent(getApplicationContext(), VIPActivity.class));
                         overridePendingTransition(0,0);

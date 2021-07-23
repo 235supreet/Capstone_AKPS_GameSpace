@@ -1,31 +1,13 @@
 <resources>
-    <string name="app_name">Perfect Plate</string>
-    <string name="register"> <u><b>Create Account</b></u></string>
-    <string name="phone">Phone Number: 98XXXXXXXX</string>
-    <string name="email">Email: xyz@example.com</string>
-    <string name="adds">Address: XYZ</string>
-    <string name="contactUs">Contact Us:</string>
-    <string name="map">Map</string>
-    <string name="name_or_phone_number">Name or Phone number</string>
-    <string name="search_book_enjoy_repeat">Search-Book-Enjoy-Repeat</string>
     <string name="login">Login</string>
     <string name="password">Password</string>
-    <string name="sign_up">Sign Up</string>
     <string name="rewards">Rewards:</string>
-    <string name="_1_202_555_0157">+1-202-555-0157</string>
-    <string name="congratulations">Congratulations</string>
     <string name="overview">Overview:</string>
     <string name="xyz">XYZ</string>
-    <string name="address">Address</string>
-    <string name="book_a_table">Book a Table</string>
-    <string name="coins">Coins:</string>
-    <string name="_35">35$</string>
-    <string name="name">Name</string>
     <string name="beyond_light_desc">Destiny 2: Beyond Light is a major expansion for Destiny 2, a first-person shooter video game developed by Bungie. It was released on November 10, 2020, as the fifth expansion of Destiny 2. Players travel to Jupiter\'s icy moon Europa to confront the Fallen Kell Eramis, who plans to use the power of the Darkness to save her people and take revenge on the Traveler back on Earth, as she and many Fallen believe that the Traveler had abandoned them before the Golden Age of humanity.</string>
     <string name="little_nightmares_desc">Little Nightmares is a puzzle-platform horror adventure game developed by Tarsier Studios and published by Bandai Namco Entertainment for Microsoft Windows, Nintendo Switch, PlayStation 4, Xbox One, and Stadia. Set in a mysterious world, Little Nightmares follows the journey of Six, a hungry little girl who must escape the Maw, an iron vessel inhabited by monstrous, twisted beings.</string>
     <string name="fall_flat_desc">Human: Fall Flat is a physics puzzle game where players play a customizable human, referred to in-game as Bob. Bob is stated to have no superhuman abilities; he is purely human. Players can make him grab objects and climb up ledges using both his arms and looking with his head.</string>
     <string name="village_desc">Resident Evil Village is a first-person survival horror game developed and published by Capcom. The sequel to Resident Evil 7: Biohazard (2017), players control Ethan Winters, who is searching for his kidnapped daughter; after a fateful encounter with Chris Redfield, he finds himself in a village filled with mutant creatures.</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
