@@ -75,6 +75,12 @@ public class BuyGameActivity extends AppCompatActivity {
                 overview.setText(text);
                 break;
             }
+            case "Call of Duty: Black Ops Cold War": {
+                imageView.setImageResource(R.drawable.coldwar);
+                String text = getString(R.string.cold_war_desc);
+                overview.setText(text);
+                break;
+            }
         }
 
         if (rating == 1) {
