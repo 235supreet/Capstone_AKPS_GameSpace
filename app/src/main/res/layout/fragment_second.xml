@@ -35,7 +35,7 @@
                 android:orientation="vertical">
 
                     <LinearLayout
-                        android:id="@+id/coupon2"
+                        android:id="@+id/promo2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="#0a1931"
@@ -87,7 +87,7 @@
                                 android:backgroundTint="#ffc947"
                                 android:text="Check offer"
                                 android:textColor="#0a1931"
-                                android:textSize="7sp"
+                                android:textSize="8sp"
                                 app:cornerRadius="0sp" />
 
                         </LinearLayout>
@@ -148,7 +148,7 @@
                             android:backgroundTint="#ffc947"
                             android:text="Check offer"
                             android:textColor="#0a1931"
-                            android:textSize="7sp"
+                            android:textSize="8sp"
                             app:cornerRadius="0sp" />
 
                     </LinearLayout>

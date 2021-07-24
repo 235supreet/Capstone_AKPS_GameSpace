@@ -23,11 +23,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"
+                android:layout_marginHorizontal="5sp"
                 android:paddingTop="20sp"
                 android:text="Create an Account"
+                android:fontFamily="@font/crowdtxt"
                 android:textAlignment="center"
                 android:textColor="#ffc947"
-                android:textSize="35sp"
+                android:textSize="27sp"
                 android:textStyle="bold" />
 
             <TextView

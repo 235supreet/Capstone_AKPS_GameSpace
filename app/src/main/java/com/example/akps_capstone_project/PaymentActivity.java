@@ -5,6 +5,7 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
 import android.Manifest;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.telephony.SmsManager;
@@ -18,7 +19,7 @@ public class PaymentActivity extends AppCompatActivity {
 
     EditText message;
     TextView phoneNumber;
-    Button send;
+    Button send, home;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,8 +27,17 @@ public class PaymentActivity extends AppCompatActivity {
         setContentView(R.layout.activity_payment);
 
         send = findViewById(R.id.sendMessageTxt);
-        phoneNumber = findViewById(R.id.phoneMessageTxt);
         message = findViewById(R.id.buyMessageTxt);
+        home= findViewById(R.id.homePayment);
+
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(PaymentActivity.this, HomeActivity.class);
+                startActivity(i);
+                finish();
+            }
+        });
 
         send.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {

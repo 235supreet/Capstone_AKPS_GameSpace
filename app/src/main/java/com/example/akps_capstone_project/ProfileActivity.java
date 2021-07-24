@@ -35,8 +35,8 @@ public class ProfileActivity extends AppCompatActivity {
         phone = findViewById(R.id.phone);
         points = findViewById(R.id.points);
         logOut = findViewById(R.id.logOut);
-        coupon1 = findViewById(R.id.coupon1);
-        coupon2 = findViewById(R.id.coupon2);
+        coupon1 = findViewById(R.id.promo1);
+        coupon2 = findViewById(R.id.promo2);
         sharedPreference=new SharedPreference();
 
         logOut.setOnClickListener(new View.OnClickListener() {

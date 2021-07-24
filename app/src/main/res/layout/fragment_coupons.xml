@@ -31,7 +31,7 @@
             android:text="(Play the Quiz to unlock these coupons)"
             android:textAlignment="center"
             android:textColor="#0a1931"
-            android:textSize="10sp"
+            android:textSize="14sp"
             android:textStyle="bold"/>
 
         <ScrollView
@@ -42,12 +42,12 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/coupon1"
+                android:layout_below="@+id/promo1"
                 android:layout_marginBottom="80dp"
                 android:orientation="vertical">
 
                 <LinearLayout
-                    android:id="@+id/coupon1"
+                    android:id="@+id/promo1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
@@ -63,7 +63,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="left"
                         android:padding="5dp"
-                        android:text="SUPERDEAL"
+                        android:text="SAVE5"
                         android:textColor="#ffc947"
                         android:textSize="17sp"
                         android:textStyle="bold"/>
@@ -72,14 +72,14 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="5dp"
-                        android:text="Get 13% off on your next purchase"
+                        android:text="Get 5% off on your next purchase"
                         android:textColor="#efefef"
                         android:textSize="12sp"
                         android:textStyle="bold"/>
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/coupon2"
+                    android:id="@+id/promo2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
@@ -95,7 +95,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="left"
                         android:padding="5dp"
-                        android:text="SAVE25"
+                        android:text="SAVE10"
                         android:textColor="#ffc947"
                         android:textSize="17sp"
                         android:textStyle="bold"/>
@@ -104,7 +104,39 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="5dp"
-                        android:text="Save 25% off on purchases above 100$"
+                        android:text="Save 10% off on purchases above 100$"
+                        android:textColor="#efefef"
+                        android:textSize="12sp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/promo3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="#373737"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    android:focusable="false"
+                    android:clickable="false">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:padding="5dp"
+                        android:text="SAVE15"
+                        android:textColor="#ffc947"
+                        android:textSize="17sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="Save flat 15% off on your next purchase"
                         android:textColor="#efefef"
                         android:textSize="12sp"
                         android:textStyle="bold"/>

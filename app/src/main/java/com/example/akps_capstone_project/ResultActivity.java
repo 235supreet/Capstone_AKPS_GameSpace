@@ -16,7 +16,7 @@ public class ResultActivity extends AppCompatActivity {
     SharedPreference sharedPreference;
     Activity context = this;
     TextView tv, tv2, tv3;
-    Button btnRestart;
+    Button btnRestart, btnProfile;
     Integer s;
 
     @Override
@@ -24,10 +24,11 @@ public class ResultActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
 
-        tv = (TextView)findViewById(R.id.tvres);
-        tv2 = (TextView)findViewById(R.id.tvres2);
-        tv3 = (TextView)findViewById(R.id.tvres3);
-        btnRestart = (Button) findViewById(R.id.btnRestart);
+        tv = findViewById(R.id.tvres);
+        tv2 = findViewById(R.id.tvres2);
+        tv3 = findViewById(R.id.tvres3);
+        btnRestart = findViewById(R.id.btnRestart);
+        btnProfile = findViewById(R.id.btnProfile);
         dbhelper = new DBHelper(this);
         sharedPreference = new SharedPreference();
 
@@ -47,12 +48,28 @@ public class ResultActivity extends AppCompatActivity {
                 int sc = 0;
                 Cursor cursor=dbhelper.getAll();
                 while (cursor.moveToNext()) {
-                     sc=cursor.getInt(4);
+                     sc = cursor.getInt(4);
                 }
-                dbhelper.update(sharedPreference.getValue(context), sc+QuestionsActivity.correct);
+                dbhelper.update(sharedPreference.getValue(context), sc + QuestionsActivity.correct);
                 QuestionsActivity.correct=0;
                 QuestionsActivity.wrong=0;
                 Intent in = new Intent(getApplicationContext(),VIPActivity.class);
+                startActivity(in);
+            }
+        });
+
+        btnProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int sc = 0;
+                Cursor cursor=dbhelper.getAll();
+                while (cursor.moveToNext()) {
+                    sc = cursor.getInt(4);
+                }
+                dbhelper.update(sharedPreference.getValue(context), sc + QuestionsActivity.correct);
+                QuestionsActivity.correct=0;
+                QuestionsActivity.wrong=0;
+                Intent in = new Intent(getApplicationContext(),ProfileActivity.class);
                 startActivity(in);
             }
         });

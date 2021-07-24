@@ -118,17 +118,17 @@
                     android:layout_marginTop="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
+                    android:orientation="vertical"
                     android:background="#0a1931"
                     android:padding="15dp">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/overview"
+                        android:text="Overview"
                         android:textSize="20sp"
                         android:textStyle="bold"
-                        android:textColor="#efefef"/>
+                        android:textColor="#ffc947"/>
 
                     <TextView
                         android:layout_width="match_parent"
@@ -136,7 +136,6 @@
                         android:id="@+id/overviewText"
                         android:text="@string/xyz"
                         android:textStyle="bold"
-                        android:paddingStart="5sp"
                         android:paddingBottom="5sp"
                         android:textSize="15sp"
                         android:textColor="#efefef"/>
@@ -154,7 +153,8 @@
                 android:backgroundTint="#0a1931"
                 android:padding="15dp"
                 app:cornerRadius="0sp"
-                android:text="Buy" />
+                android:text="Contact Seller"
+                android:textColor="#efefef"/>
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/exit"

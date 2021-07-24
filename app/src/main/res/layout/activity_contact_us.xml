@@ -10,9 +10,8 @@
     <ScrollView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_marginStart="10pt"
-        android:layout_marginTop="20pt"
-        android:layout_marginEnd="10pt"
+        android:layout_marginHorizontal="20sp"
+        android:layout_marginTop="20sp"
         android:layout_marginBottom="65sp"
         android:background="@drawable/background">
 
@@ -26,7 +25,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10sp"
-                android:layout_marginTop="200sp"
+                android:layout_marginTop="220sp"
                 android:text="Get in Touch"
                 android:textColor="#0a1931"
                 android:textSize="30sp"
@@ -38,7 +37,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10sp"
                 android:text="Feel free to drop us a line below"
-                android:textColor="#848484"
+                android:textColor="#373737"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -98,12 +97,12 @@
     <ScrollView
         android:layout_width="285dp"
         android:layout_height="212dp"
-        android:layout_marginStart="5pt"
-        android:layout_marginTop="5pt"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="20sp"
         android:background="#0a1931"
+        android:elevation="4sp"
         android:paddingRight="7sp"
-        android:paddingBottom="7sp"
-        android:elevation="4sp">
+        android:paddingBottom="7sp">
 
         <LinearLayout
             android:layout_width="285dp"

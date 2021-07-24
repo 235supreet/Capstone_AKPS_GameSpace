@@ -29,10 +29,22 @@
             android:textStyle="bold" />
 
         <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25sp"
+            android:paddingVertical="4sp"
+            android:text="Points have been added to your profile!\nPlay more to unlock more coupons"
+            android:textAlignment="center"
+            android:textColor="#ffc947"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
             android:id="@+id/tvres"
             android:layout_width="wrap_content"
             android:layout_height="28dp"
-            android:layout_marginTop="70dp"
+            android:layout_marginTop="50dp"
             android:text=" "
             android:textAlignment="center"
             android:textAppearance="?android:attr/textAppearanceLarge"
@@ -70,6 +82,16 @@
             android:layout_marginTop="30sp"
             android:backgroundTint="#ffc947"
             android:text="Back"
+            android:textColor="#0a1931"
+            app:cornerRadius="0sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#efefef"
+            android:text="Check profile"
             android:textColor="#0a1931"
             app:cornerRadius="0sp" />
 

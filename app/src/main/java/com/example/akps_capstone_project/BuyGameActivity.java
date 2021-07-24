@@ -63,6 +63,18 @@ public class BuyGameActivity extends AppCompatActivity {
                 overview.setText(text);
                 break;
             }
+            case "Red Dead Redemption 2": {
+                imageView.setImageResource(R.drawable.reddead);
+                String text = getString(R.string.red_dead_desc);
+                overview.setText(text);
+                break;
+            }
+            case "Star Wars Jedi: Fallen Order": {
+                imageView.setImageResource(R.drawable.jedifallen);
+                String text = getString(R.string.jedi_fallen_desc);
+                overview.setText(text);
+                break;
+            }
         }
 
         if (rating == 1) {

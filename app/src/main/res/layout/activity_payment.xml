@@ -58,22 +58,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
-                android:text="Feel free to drop us a line below"
+                android:text="Message us for details of the game"
                 android:textColor="#ffc947"
                 android:textSize="16sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/phoneMessageTxt"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="10sp"
-                android:layout_marginTop="10dp"
-                android:hint="+91-998-XXX-XXX"
-                android:padding="7dp"
-                android:textColor="#0a1931"
-                android:textColorHint="#848484"
-                android:textSize="16sp" />
+                android:textStyle="bold"
+                android:background="@drawable/blue_gradient"/>
 
             <EditText
                 android:id="@+id/buyMessageTxt"
@@ -98,6 +87,17 @@
                 android:backgroundTint="#0a1931"
                 android:text="SEND"
                 android:textColor="#efefef"
+                app:cornerRadius="0sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/homePayment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="#efefef"
+                android:text="Back to homepage"
+                android:textColor="#0a1931"
+                android:textStyle="bold"
                 app:cornerRadius="0sp" />
 
         </LinearLayout>

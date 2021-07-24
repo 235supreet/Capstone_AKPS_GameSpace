@@ -15,10 +15,10 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 public class HomeActivity extends AppCompatActivity {
 
     ListView listView;
-    String[] games = {"Destiny 2: Beyond Light", "Little Nightmares", "Human: Fall Flat", "Resident Evil: Village"};
-    Integer[] image = {R.drawable.destiny, R.drawable.nightmares, R.drawable.fall, R.drawable.village};
-    Integer[] rating = {3, 2, 1, 5};
-    String[] price = {"$85", "$30", "$50", "$40"};
+    String[] games = {"Destiny 2: Beyond Light", "Little Nightmares", "Human: Fall Flat", "Resident Evil: Village", "Red Dead Redemption 2", "Star Wars Jedi: Fallen Order"};
+    Integer[] image = {R.drawable.destiny, R.drawable.nightmares, R.drawable.fall, R.drawable.village, R.drawable.reddead, R.drawable.jedifallen};
+    Integer[] rating = {3, 2, 1, 5, 5, 4};
+    String[] price = {"$85", "$30", "$50", "$40", "60$", "39$"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

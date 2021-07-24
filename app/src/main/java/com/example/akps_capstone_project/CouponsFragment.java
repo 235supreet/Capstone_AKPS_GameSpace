@@ -12,7 +12,7 @@ import android.view.ViewGroup;
 public class CouponsFragment extends Fragment {
 
     DBHelper dbhelper;
-    View view, coupon1, coupon2;
+    View view, coupon1, coupon2, coupon3;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -25,8 +25,9 @@ public class CouponsFragment extends Fragment {
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        coupon1 = view.findViewById(R.id.coupon1);
-        coupon2 = view.findViewById(R.id.coupon2);
+        coupon1 = view.findViewById(R.id.promo1);
+        coupon2 = view.findViewById(R.id.promo2);
+        coupon3 = view.findViewById(R.id.promo3);
 
         dbhelper = new DBHelper(getActivity());
         int sc = 0;
@@ -37,6 +38,7 @@ public class CouponsFragment extends Fragment {
 
         coupon1.setEnabled(false);
         coupon2.setEnabled(false);
+        coupon3.setEnabled(false);
 
         if (sc >= 5) {
             coupon1.setBackgroundResource(R.color.darkest_blue);
@@ -44,11 +46,17 @@ public class CouponsFragment extends Fragment {
             coupon1.isFocusable();
             coupon1.isClickable();
         }
-        else if(sc >= 10) {
+        if (sc >= 10) {
             coupon2.setBackgroundResource(R.color.darkest_blue);
             coupon2.setEnabled(true);
             coupon2.isFocusable();
             coupon2.isClickable();
+        }
+        if (sc >= 15) {
+            coupon3.setBackgroundResource(R.color.darkest_blue);
+            coupon3.setEnabled(true);
+            coupon3.isFocusable();
+            coupon3.isClickable();
         }
 
         coupon1.setOnClickListener(new View.OnClickListener() {

@@ -34,6 +34,7 @@
                     android:paddingTop="20sp"
                     android:text="GameSpace"
                     android:textAlignment="center"
+                    android:fontFamily="@font/crowdtxt"
                     android:textColor="#0a1931"
                     android:textSize="40sp"
                     android:textStyle="bold" />

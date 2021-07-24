@@ -10,168 +10,171 @@
     <ScrollView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:background="@drawable/background"
-        android:layout_marginStart="10pt"
-        android:layout_marginTop="20pt"
-        android:layout_marginEnd="10pt"
-        android:layout_marginBottom="65sp">
+        android:layout_marginHorizontal="20sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginBottom="65sp"
+        android:background="@drawable/background">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/rellay1"
-            android:layout_marginTop="180dp">
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginRight="30dp"
-                android:orientation="vertical">
+                android:layout_below="@id/rellay1"
+                android:layout_marginTop="180dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:layout_centerVertical="true"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical"
+                    android:paddingTop="20sp">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Email"
-                        android:textColor="#0a1931"
-                        android:textSize="13sp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="xxx@xxxxx.com"
-                        android:id="@+id/email"
-                        android:textColor="#878787"
-                        android:textSize="18sp" />
-
-                    <View
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:layout_marginTop="15dp"
-                        android:background="#0a1931" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Phone"
-                        android:textColor="#0a1931"
-                        android:textSize="13sp" />
+                        android:orientation="vertical">
 
-                    <TextView
-                        android:id="@+id/phone"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="xxx-xxx-xxxx"
-                        android:textColor="#878787"
-                        android:textSize="18sp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Email ID"
+                            android:textColor="#0a1931"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
 
-                    <View
+                        <TextView
+                            android:id="@+id/email"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="xxx@xxxxx.com"
+                            android:textColor="#373737"
+                            android:textSize="18sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="15dp"
+                            android:background="#0a1931" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:layout_marginTop="15dp"
-                        android:background="#0a1931" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/rewards"
-                        android:textColor="#0a1931"
-                        android:textSize="13sp" />
+                        android:layout_marginTop="15dp"
+                        android:orientation="vertical">
 
-                    <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="50dp"
-                        android:layout_marginTop="5dp"
-                        android:src="@drawable/reward" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Phone Number"
+                            android:textColor="#0a1931"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
 
-                    <View
+                        <TextView
+                            android:id="@+id/phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="xxx-xxx-xxxx"
+                            android:textColor="#373737"
+                            android:textSize="18sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="15dp"
+                            android:background="#0a1931" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="1dp"
+                        android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
-                        android:background="#0a1931" />
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/rewards"
+                            android:textColor="#0a1931"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/reward" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="15dp"
+                            android:background="#0a1931" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Points"
+                            android:textColor="#0a1931"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/points"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20sp"
+                            android:background="@drawable/circle_border"
+                            android:focusable="false"
+                            android:padding="10dp"
+                            android:text=" "
+                            android:textColor="#0a1931"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/logOut"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="100sp"
+                        android:layout_marginTop="20sp"
+                        android:backgroundTint="#0a1931"
+                        android:text="Logout"
+                        app:cornerRadius="0sp" />
 
                 </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
-                    android:orientation="horizontal">
+            </RelativeLayout>
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Points"
-                        android:textColor="#0a1931"
-                        android:textSize="13sp" />
-
-                    <TextView
-                        android:id="@+id/points"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="20sp"
-                        android:background="@drawable/circle_border"
-                        android:focusable="false"
-                        android:padding="20dp"
-                        android:text="121"
-                        android:textColor="#0a1931"
-                        android:textStyle="bold"
-                        android:textSize="15sp"/>
-
-                </LinearLayout>
-
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/logOut"
-                    android:layout_width="120dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginHorizontal="100sp"
-                    android:layout_marginTop="20sp"
-                    android:backgroundTint="#0a1931"
-                    android:text="Logout"
-                    app:cornerRadius="0sp"/>
-
-            </LinearLayout>
-
-        </RelativeLayout>
-
-    </LinearLayout>
+        </LinearLayout>
 
     </ScrollView>
 
     <LinearLayout
         android:layout_width="198dp"
         android:layout_height="190dp"
-        android:layout_marginStart="5pt"
-        android:layout_marginTop="5pt"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="20sp"
         android:layout_marginEnd="20pt"
         android:background="#0a1931"
         android:orientation="vertical">
@@ -200,8 +203,7 @@
                     android:layout_marginBottom="9dp"
                     android:adjustViewBounds="true"
                     android:background="@drawable/circle"
-                    android:padding="3dp"
-                    android:scaleType="centerInside"
+                    android:padding="10dp"
                     android:src="@drawable/profileimage" />
 
             </RelativeLayout>
@@ -215,6 +217,7 @@
                 android:layout_marginTop="15sp"
                 android:text="Profile Name"
                 android:textColor="#efefef"
+                android:textStyle="bold"
                 android:textSize="20sp" />
 
         </RelativeLayout>
