@@ -29,7 +29,7 @@
                 android:fontFamily="@font/crowdtxt"
                 android:textAlignment="center"
                 android:textColor="#ffc947"
-                android:textSize="27sp"
+                android:textSize="23sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -40,7 +40,7 @@
                 android:text=""
                 android:textAlignment="center"
                 android:textColor="#ff0000"
-                android:textSize="20sp"
+                android:textSize="17sp"
                 android:textStyle="bold" />
 
             <EditText
@@ -54,7 +54,8 @@
                 android:textColor="#0a1931"
                 android:hint="Name"
                 android:inputType="textPersonName"
-                android:padding="7dp" />
+                android:padding="7dp"
+                android:lines="1"/>
 
             <EditText
                 android:id="@+id/signUpPhone"

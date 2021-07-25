@@ -36,7 +36,7 @@
                     android:textAlignment="center"
                     android:fontFamily="@font/crowdtxt"
                     android:textColor="#0a1931"
-                    android:textSize="40sp"
+                    android:textSize="37sp"
                     android:textStyle="bold" />
 
                 <TextView
